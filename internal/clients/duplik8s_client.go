@@ -18,6 +18,9 @@ package clients
 
 import (
 	"context"
+	"slices"
+	"strings"
+
 	"github.com/telemaco019/duplik8s/internal/core"
 	"github.com/telemaco019/duplik8s/internal/utils"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -25,8 +28,6 @@ import (
 	"k8s.io/client-go/discovery"
 	"k8s.io/client-go/dynamic"
 	"k8s.io/client-go/restmapper"
-	"slices"
-	"strings"
 )
 
 type Duplik8sClient struct {
